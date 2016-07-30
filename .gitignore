@@ -29,6 +29,12 @@ Thumbs.db
 *.un~
 *.swp
 
+
+# IDE generated files #
+######################
+.idea
+.idea/workspace.xml
+
 # SASS #
 ##########
 .sass-cache
@@ -118,3 +124,4 @@ logs/supervisord.log
 *.override.yml
 
 *.log
+

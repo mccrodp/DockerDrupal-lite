@@ -1,6 +1,6 @@
 ![DockerDrupal Logo](https://raw.githubusercontent.com/4alldigital/drupaldev-docker/master/docs/images/drupal-docker-logo-monochrome.png)
 
-[DockerDrupal](https://www.4alldigital.io/docker-drupal) is Docker based development environment for local Drupal websites, Wordpress websites or PHP apps. Useful for debugging and developing your projects, with a possible intention of hosting sites using [DockerDrupal Prod](https://github.com/4alldigital/drupalprod-docker) (A read-only production environment).
+[DockerDrupal lite](https://www.4alldigital.io/docker-drupal) is Docker based lite development environment for local Drupal websites, Wordpress websites or PHP apps. Useful for debugging and developing your projects, with a possible intention of hosting sites using [DockerDrupal Prod](https://github.com/4alldigital/drupalprod-docker) (A read-only production environment).
 
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
@@ -15,7 +15,6 @@
   1. Git
   2. Basic understanding of bash/command-line
 
-
   ### Set up Docker Environment
   1. Install and run [Docker for Mac](https://docs.docker.com/docker-for-mac)
   2. In terminal paste and run the following:
@@ -23,14 +22,14 @@
   ```
    mkdir -p ~/infra && \
    cd ~/infra && \
-   git clone https://github.com/4alldigital/drupaldev-docker.git && \
-   cd ~/infra/drupaldev-docker && \
-   caffeinate -i time ./scripts/onboardme.sh
+   git clone https://github.com/4alldigital/dockerdrupal-lite.git && \
+   cd ~/infra/dockerdrupal-lite && \
+   docker-compose up -d
 
   ```
 
 
-  ### Setup Basic Drupal 7 site
+  ### Setup Basic Drupal 8 site
   1. Open `Terminal.app` application in your /Applications/Utilities/ folder
   2. From the command-line run the following:
 
@@ -40,37 +39,12 @@
 
   ```
 
-  At the end of the `initdrupal` script, 4 browser tabs should be open, with mailcatcher, SOLR, Selenium Grid and a demo Drupal install running.  First off, we'd check out the way the demo Drupal site is set up, and try to reproduce your own.
-
 # What next?
 
 DockerDrupal currently utilise the following containers:
 
  1. https://hub.docker.com/r/4alldigital/drupaldev-php7
 
- 2. https://hub.docker.com/r/4alldigital/drupaldev-redis
+ 2. https://hub.docker.com/r/4alldigital/drupaldev-nginx
 
- 3. https://hub.docker.com/r/4alldigital/drupaldev-behat
-
- 4. https://hub.docker.com/r/4alldigital/drupaldev-nginx
-
- 5. https://hub.docker.com/r/4alldigital/drupaldev-solr
-
- 6. https://hub.docker.com/r/selenium/hub
-
- 7. https://hub.docker.com/r/selenium/node-chrome-debug
-
- 8. https://hub.docker.com/r/selenium/node-firefox-debug
-
- 9. https://hub.docker.com/r/schickling/mailcatcher
-
- 10. https://hub.docker.com/r/_/mariadb
-
- 11. https://hub.docker.com/r/jwilder/docker-gen
-
- 12. https://hub.docker.com/r/jwilder/nginx-proxy
-
-
-# Read docs
-
-Our work-in-progress documentation will live on readthedocs.org from now on. Visit http://dockerdrupal.readthedocs.org/en/latest
+ 3. https://hub.docker.com/r/_/mariadb
