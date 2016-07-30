@@ -1,0 +1,42 @@
+version: "2"
+#
+# [ services definitions ]
+#
+services:
+  db:
+    image : mariadb:10.1.11
+    ports :
+      - "3306:3306"
+    volumes :
+      - ddlite-mysqldata:/var/lib/mysql
+    env_file: mysql.env
+    hostname: db
+    container_name: ddlite_mysql
+
+  php:
+    image : 4alldigital/drupaldev-php7:latest
+    volumes :
+      - $APPS_PATH/:/docker
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    hostname: php
+    container_name: ddlite_php
+
+  nginx:
+    image : 4alldigital/drupaldev-nginx:latest
+    ports :
+      - "8888:80"
+    volumes :
+      - $APPS_PATH:/docker
+      - ./mounts/conf/nginx/sites-enabled:/etc/nginx/sites-enabled
+    hostname: nginx
+    container_name: ddlite_nginx
+
+#
+# [ volumes definition ]
+#
+volumes:
+  ddlite-mysqldata:
+    driver: local
+
