@@ -65,42 +65,6 @@ nbdist/*
 nbactions.xml
 nb-configuration.xml
 
-
-# local stuff
-
-mounts/conf/nginx/certs/*
-mounts/conf/nginx/ssl/*
-mounts/conf/nginx/sites-enabled/*
-!conf/nginx/sites-enabled/*.txt
-
-#mounts
-mounts/conf/solr/*
-!mounts/conf/solr/solr.xml
-!mounts/conf/solr/zoo.cfg
-
-mounts/conf/nginx/certs/*
-mounts/conf/nginx/ssl/*
-mounts/conf/nginx/sites-enabled/*
-!mounts/conf/nginx/sites-enabled/*.txt
-
-# site vhosts
-helpers/*
-
-# Example settings files #
-##########################
-settings/the.settings.local.php
-
-mounts/conf/nginx/certs/*
-mounts/conf/nginx/ssl/*
-#mounts/conf/nginx/sites-enabled/*
-#!mounts/conf/nginx/sites-enabled/*.txt
-
-# Behat cache
-mounts/conf/behat/cache/*
-
-#replace this with an exmaple file
-mounts/conf/behat/docker.aliases.drushrc.php
-
 # sublime temp files
 *.tmp
 

@@ -29,7 +29,7 @@ services:
       - "8888:80"
     volumes :
       - $APPS_PATH:/docker
-      - ./mounts/conf/nginx/sites-enabled:/etc/nginx/sites-enabled
+      - ./sites-enabled:/etc/nginx/sites-enabled
     hostname: nginx
     container_name: ddlite_nginx
 
