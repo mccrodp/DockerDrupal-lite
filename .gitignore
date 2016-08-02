@@ -78,3 +78,9 @@ logs/supervisord.log
 *.override.yml
 *.log
 
+
+sites-enabled/d8.docker
+
+sites-enabled/pl.docker
+
+*.docker
