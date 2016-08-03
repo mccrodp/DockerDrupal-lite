@@ -79,7 +79,17 @@ logs/supervisord.log
 *.log
 
 sites-enabled/*
-sites-enabled/d8.docker
-sites-enabled/pl.docker
+!sites-enabled/default
+.idea/*
 
 *.docker
+
+.idea/modules.xml
+
+.idea/misc.xml
+
+.idea/dockerdrupal-light.iml
+
+.idea/copyright/profiles_settings.xml
+
+.idea/copyright/profiles_settings.xml
