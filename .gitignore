@@ -85,11 +85,12 @@ sites-enabled/*
 *.docker
 
 .idea/modules.xml
-
 .idea/misc.xml
-
 .idea/dockerdrupal-light.iml
-
 .idea/copyright/profiles_settings.xml
-
+.idea/copyright/profiles_settings.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/dockerdrupal-light.iml
+.idea/copyright
 .idea/copyright/profiles_settings.xml
