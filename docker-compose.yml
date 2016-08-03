@@ -9,9 +9,10 @@ services:
       - "3306:3306"
     volumes :
       - ddlite-mysqldata:/var/lib/mysql
+      - ./config/mysql:/etc/mysql/conf.d
     env_file: mysql.env
     hostname: db
-    container_name: ddlite_mysql
+    container_name: mysql_ddl
 
   php:
     image : 4alldigital/drupaldev-php7:latest
@@ -25,17 +26,24 @@ services:
       - 8.8.8.8
       - 8.8.4.4
     hostname: php
-    container_name: ddlite_php
+    container_name: php_ddl
 
   nginx:
     image : 4alldigital/drupaldev-nginx:latest
     ports :
-      - "8088:80"
+      - "80:80"
     volumes :
       - $APPS_PATH:/docker
       - ./sites-enabled:/etc/nginx/sites-enabled
     hostname: nginx
-    container_name: ddlite_nginx
+    container_name: nginx_ddl
+
+  redis:
+    image : 4alldigital/drupaldev-redis:latest
+    hostname: redis
+    container_name: redis_ddl
+    mem_limit: 100000000
+    memswap_limit: 2000000000
 
 #
 # [ volumes definition ]
@@ -43,4 +51,3 @@ services:
 volumes:
   ddlite-mysqldata:
     driver: local
-

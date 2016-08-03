@@ -13,3 +13,5 @@ source ~/.bash_profile
 echo "${LIGHTBLUE}#####################################${NC}"
 echo "${LIGHTBLUE}@TODO write DRUPAL * make file${NC}"
 echo "${LIGHTBLUE}#####################################${NC}"
+
+drush qd --use-existing --uri=http://db:3306 --profile=standard  
