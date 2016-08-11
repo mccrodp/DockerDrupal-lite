@@ -21,27 +21,10 @@
 
   ### Set up Docker Environment
   1. Install and run [Docker for Mac](https://docs.docker.com/docker-for-mac)
-  2. In terminal paste and run the following:
-
-  ```
-   mkdir -p ~/infra && \
-   cd ~/infra && \
-   git clone https://github.com/4alldigital/dockerdrupal-lite.git && \
-   cd ~/infra/dockerdrupal-lite && \
-   docker-compose up -d
-
-  ```
-
-
-  ### Setup Basic Drupal 8 site
-  1. Open `Terminal.app` application in your /Applications/Utilities/ folder
-  2. From the command-line run the following:
-
-  ```
-     cd ~/infra/drupaldev-docker && \
-     ./scripts/initdrupal.sh
-
-  ```
+  2. DD-lite must live next to you /app folder
+  3. git clone https://github.com/4alldigital/DockerDrupal-lite.git ddl_<yourappname>
+  4. cd ddl_<yourappname> 
+  5. docker-compose up -d
 
 # What next?
 
