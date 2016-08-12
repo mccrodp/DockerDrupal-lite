@@ -24,7 +24,9 @@
   2. DD-lite must live next to you /app folder
     
     ` .        
+
       ├── app
+      
       ├── docker_<yourappname>      
     `
   3. git clone https://github.com/4alldigital/DockerDrupal-lite.git ddl_\<yourappname>
