@@ -26,7 +26,7 @@
 ```
       .        
       ├── app
-      
+      │   └── www
       ├── docker_<yourappname>      
 ```
 
