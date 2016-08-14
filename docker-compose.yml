@@ -59,7 +59,7 @@ services:
 # [ volumes definition ]
 #
 volumes:
-  ddlite-mysqldata:
+  ddlite-postgresdata:
     driver: local
   app-sync:
     driver: local
