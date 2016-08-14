@@ -11,13 +11,12 @@ services:
      hostname : app
 
   db:
-    image : mariadb:10.1.11
+    image : postgres:latest
     ports :
       - "3306:3306"
     volumes :
-      - ddlite-mysqldata:/var/lib/mysql
-      - ./config/mysql:/etc/mysql/conf.d
-    env_file: mysql.env
+      - ddlite-postgresdata:/var/lib/postgresql/data
+    env_file: postgres.env
     hostname: db
 
   php:
