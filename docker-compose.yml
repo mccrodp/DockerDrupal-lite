@@ -13,7 +13,7 @@ services:
   db:
     image : postgres:latest
     ports :
-      - "3306:3306"
+      - "5432:5432"
     volumes :
       - ddlite-postgresdata:/var/lib/postgresql/data
     env_file: postgres.env
