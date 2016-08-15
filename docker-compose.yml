@@ -51,6 +51,14 @@ services:
     mem_limit: 100000000
     memswap_limit: 2000000000
 
+  solr:
+      image : 4alldigital/drupaldev-solr:latest
+      ports :
+        - "8983:8983"
+      volumes :
+        - ./config/solr:/opt/solr/example/solr
+      hostname: solr
+
   mailcatcher:
     image : schickling/mailcatcher
     ports :
