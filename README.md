@@ -35,6 +35,16 @@
   4. cd ddl_\<yourappname> 
   5. docker-compose up -d
 
+## USEFUL COMMANDS
+
+    1. docker-compose pull (pull images | updates)
+    2. docker-compose up -d (start app containers and daemon to run in the background)
+    3. docker-compose stop (stop app containers)
+    4. docker exec -i <ddl>_nginx_1 tail -f /var/log/nginx/app-error.log (tail nginx log)
+    5. docker exec -i <ddl>_php_1 drush cc all (clear Drupal cache)
+    6. docker logs -f <ddl>_app_1 (follow app sync logs and processes)
+
+
 # What next?
 
 DockerDrupal currently utilise the following containers:
