@@ -16,8 +16,10 @@
 ------------------------------------------------------------------------------------------------
 
   ### PreRequisites
-  1. Git
-  2. Basic understanding of bash/command-line
+   -  Git
+   - Basic understanding of bash/command-line
+  
+  --------------------------------------------
 
   ### Set up Docker Environment
   1. Install and run [Docker for Mac](https://docs.docker.com/docker-for-mac)
