@@ -21,7 +21,8 @@
 
   ### Set up Docker Environment
   1. Install and run [Docker for Mac](https://docs.docker.com/docker-for-mac)
-  2. DD-lite must live next to you /app folder
+  2. git clone https://github.com/4alldigital/DockerDrupal-lite.git docker_\<yourappname>
+  3. DD-lite must live next to you /app folder
  
 ```
       .        
@@ -31,8 +32,7 @@
 ```
 
 
-  3. git clone https://github.com/4alldigital/DockerDrupal-lite.git ddl_\<yourappname>
-  4. cd ddl_\<yourappname> 
+  4. cd docker_\<yourappname> 
   5. docker-compose up -d
 
 ## USEFUL COMMANDS
