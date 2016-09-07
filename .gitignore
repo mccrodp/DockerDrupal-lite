@@ -83,6 +83,10 @@ logs/supervisord.log
 
 *.docker
 
+# ignore SOLR data directory
+config/solr/site/data
+
+# Ignore PHP STORM IDE stuff
 .idea/modules.xml
 .idea/misc.xml
 .idea/dockerdrupal-light.iml
