@@ -78,9 +78,6 @@ logs/supervisord.log
 *.override.yml
 *.log
 
-sites-enabled/*
-!sites-enabled/default
-!sites-enabled/docker.dev
 .idea/*
 
 *.docker
