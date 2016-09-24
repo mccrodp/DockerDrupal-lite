@@ -4,6 +4,8 @@ server {
 
     sendfile off;
 
+    client_max_body_size 20M;
+
     index index.php index.html;
     server_name docker.dev;
     error_log  /var/log/nginx/app-error.log;
